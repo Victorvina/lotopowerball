@@ -1,0 +1,17 @@
+# ===== Cloudflare Pages — _redirects =====
+# Format: source destination [status]
+
+# Force www to apex (or apex to www — pick one and uncomment)
+# https://www.lotopowerball.com/* https://lotopowerball.com/:splat 301!
+
+# Clean URLs — let users hit /how-to-play, /where-to-play
+/how-to-play       /pages/how-to-play.html  200
+/where-to-play     /pages/where-to-play.html 200
+/jackpot-history   /pages/jackpot-history.html 200
+/statistics        /pages/statistics.html   200
+/results           /                        301
+/play              /pages/where-to-play.html 301
+/buy               /pages/where-to-play.html 301
+
+# 404 fallback
+/*  /404.html  404
